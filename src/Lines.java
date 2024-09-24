@@ -14,14 +14,12 @@ public class Lines
         Pixel red = new Pixel(255, 0 ,0);
 
         //for each pixel in on the y-axis, replace the pixel halfway in the x-axis with red
-        for(int i = 0; i < image.getImageHeight(); i++)
-        {
+        for(int i = 0; i < image.getImageHeight(); i++){
             image.setPixel(image.getImageWidth() / 2, i, red);
         }
 
         //for each pixel in on the x-axis, replace the pixel halfway in the y-axis with red
-        for(int i = 0; i < image.getImageWidth(); i++)
-        {
+        for(int i = 0; i < image.getImageWidth(); i++){
             image.setPixel(i, image.getImageHeight() / 2, red);
         }
 
