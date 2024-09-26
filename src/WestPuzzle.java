@@ -4,12 +4,8 @@ public class WestPuzzle
     public static void main(String[] args){
         APImage image = new APImage("west-puzzle.png");
 
-        //this loop iterates though every pixel in the image
-        for(int i = 0; i < image.getImageWidth(); i++){
-            for(int j = 0; j < image.getImageHeight(); j++){
-
-                //create pixel override
-                Pixel p = image.getPixel(i, j);
+        //for-each pixel in the image...
+        for(Pixel p : image){
 
                 //remove all red and green
                 p.setRed(0);
@@ -27,12 +23,7 @@ public class WestPuzzle
                 //change blue to red
                 p.setRed(p.getBlue());
                 p.setBlue(0);
-
-                //apply changes
-                image.setPixel(i, j, p);
-            }
         }
-
         image.draw();
     }
 }
