@@ -15,10 +15,8 @@ public class Filter
 
 
         //this loop iterates though every pixel in the image
-        for(int i = 0; i < image.getImageWidth(); i++)
-        {
-            for (int j = 0; j < image.getImageHeight(); j++)
-            {
+        for(int i = 0; i < image.getImageWidth(); i++){
+            for (int j = 0; j < image.getImageHeight(); j++){
                 //create override pixel
                 Pixel p = image.getPixel(i, j);
 
