@@ -8,7 +8,7 @@ public class Filter
         String filename = input.nextLine();
         APImage image = new APImage(filename);
 
-        System.out.println("Enter an RBG value separated by spaces, like this [red grn blu]");
+        System.out.println("Enter a RBG value separated by spaces, like this [red grn blu]");
         int r = input.nextInt();
         int g = input.nextInt();
         int b = input.nextInt();
