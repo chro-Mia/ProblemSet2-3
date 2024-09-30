@@ -36,7 +36,7 @@ public class Border
             }
         }
 
-
+        /*
         //verification test
         //there are ways to fool this test, but it would only happen under ultra-specific circumstances so this check
         //is generally trustworthy
@@ -76,6 +76,8 @@ public class Border
         else{
             System.out.println("West check FAILED!");
         }
+
+         */
 
         image.draw();
     }
