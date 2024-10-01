@@ -37,7 +37,7 @@ public class ExtendedBorder
             }
         }
 
-        //this essentially moves the chosen image to the center of the border
+        //this essentially moves the chosen image inside the border by using a fixed 20 pixel offset
         for(int i = 0; i < image.getImageHeight(); i++){
             for(int j = 0; j < image.getImageWidth(); j++){
                 canvas.setPixel(j + 20, i + 20, image.getPixel(j, i));
